@@ -20,5 +20,5 @@ from emailsender.views import send_email_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('emailsender/', send_email_view, name='send_email'),
+    path('', send_email_view, name='send_email'),
 ]
