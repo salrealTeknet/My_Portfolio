@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import send_email_view
+from emailsender.views import send_email_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
