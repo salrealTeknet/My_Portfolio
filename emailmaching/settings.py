@@ -129,4 +129,4 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'saliuabduljawwad.a@gmail.com'  # Your email address
-EMAIL_HOST_PASSWORD = '2525Ogirimaa#'  # Your email password or app password
+EMAIL_HOST_PASSWORD = 'nkkw qgpj jduo ofys '  # Your email password or app password
