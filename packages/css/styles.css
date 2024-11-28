@@ -1327,4 +1327,25 @@ img {
   .contact__inputs {
     grid-template-columns: repeat(2, 1fr);
   }
+
+    .hidden {
+  display: none;
+}
+
+.form-response {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.form-response.success {
+  color: green;
+  background-color: #e6ffe6;
+}
+
+.form-response.error {
+  color: red;
+  background-color: #ffe6e6;
+}
+
 }
