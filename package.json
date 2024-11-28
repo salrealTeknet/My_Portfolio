@@ -1,0 +1,15 @@
+{
+  "name": "my_portfolio",
+  "version": "1.0.0",
+  "description": "Responsive Portfolio Website Using HTML, CSS and JavaScript, with a beautiful user interface. \r Website contains: \r - Header \r - Home\r - About\r - Skills\r - Qualification\r - Services\r - Portfolio\r - Project in mind\r - Testimonial\r - Contact\r - Footer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}
