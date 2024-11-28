@@ -1,8 +1,8 @@
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.core.mail import send_mail
-from django.http import HttpResponseRedirect
-from django.urls import reverse
-from django.contrib import messages  # To display feedback messages
+from django.contrib import messages  # Import for displaying feedback messages
+
 
 def send_email_view(request):
     if request.method == 'POST':
@@ -14,7 +14,7 @@ def send_email_view(request):
         # Validate form inputs
         if not name or not email or not subject or not message:
             messages.error(request, "All fields are required.")
-            return render(request, 'email_form.html')  # Re-render the form with an error message
+            return render(request, 'index.html')  # Re-render the index page with an error message
 
         # Construct email message
         email_message = f"Name: {name}\nEmail: {email}\n\nMessage:\n{message}"
@@ -29,10 +29,10 @@ def send_email_view(request):
                 fail_silently=False,
             )
             messages.success(request, "Email sent successfully!")
-            return HttpResponseRedirect(reverse('success_page'))  # Redirect to a success page
-
         except Exception as e:
             messages.error(request, f"Failed to send email. Error: {e}")
-            return render(request, 'email_form.html')  # Re-render the form with an error message
 
-    return render(request, 'email_form.html')
+        # Render the index page with messages
+        return render(request, 'index.html')
+
+    return render(request, 'index.html')

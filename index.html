@@ -772,6 +772,16 @@
             </section>
 
         <!--==================== CONTACT ME ====================-->
+            {% if messages %}
+                <div class="messages">
+                    {% for message in messages %}
+                    <div class="alert {{ message.tags }}">
+                        {{ message }}
+                    </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
         <section class="contact section" id="contact">
             <h2 class="section__title">Contact me</h2>
             <span class="section__subtitle">Get in touch</span>
